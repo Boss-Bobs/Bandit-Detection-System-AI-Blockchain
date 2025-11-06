@@ -108,7 +108,13 @@
                         </div>
                         <p class="mt-2 text-muted">Connecting to RPi stream...</p>
                     </div>
-                    <img id="liveVideo" class="img-fluid rounded shadow" style="display: none;" alt="Live Video Feed">
+                    <iframe
+                        id="liveVideo"
+                        class="rounded shadow"
+                        style="display: none; width: 100%; height: 520px; border: none;"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
                     <div id="videoError" class="alert alert-danger mt-3 d-none" role="alert">
                         <i class="fas fa-video-slash me-2"></i>
                         <span id="videoErrorMsg"></span>
