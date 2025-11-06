@@ -120,28 +120,22 @@ async function fetchAnomalies() {
 function setupLiveFeed() {
     const video = document.getElementById('liveVideo');
     const loading = document.getElementById('videoLoading');
-    const error   = document.getElementById('videoError');
-    const errorMsg= document.getElementById('videoErrorMsg');
+    const error = document.getElementById('videoError');
+    const errorMsg = document.getElementById('videoErrorMsg');
 
     if (video.src) return;
 
-    // THE ONLY LINE THAT MATTERS
     const streamUrl = `${RPI_BASE_URL}/video_feed?ngrok-skip-browser-warning=1&t=${Date.now()}`;
-
+    
     video.src = streamUrl;
-    console.log('MJPEG →', streamUrl);
+    console.log('MJPEG (iframe) →', streamUrl);
 
-    video.onload = () => {
+    // iframe loads fast — just show after 1.5s
+    setTimeout(() => {
         loading.classList.add('d-none');
         video.style.display = 'block';
         error.classList.add('d-none');
-    };
-    video.onerror = (e) => {
-        loading.classList.add('d-none');
-        errorMsg.textContent = `MJPEG failed – open DevTools → Network → check response`;
-        error.classList.remove('d-none');
-        console.error('MJPEG error', e);
-    };
+    }, 1500);
 }
 
 // Blockchain Logs Functions
