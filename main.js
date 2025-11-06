@@ -116,30 +116,31 @@ async function fetchAnomalies() {
     }
 }
 
-// Live Video Feed Functions
+// ---- LIVE FEED ----
 function setupLiveFeed() {
     const video = document.getElementById('liveVideo');
     const loading = document.getElementById('videoLoading');
-    const error = document.getElementById('videoError');
-    const errorMsg = document.getElementById('videoErrorMsg');
+    const error   = document.getElementById('videoError');
+    const errorMsg= document.getElementById('videoErrorMsg');
 
     if (video.src) return;
 
-    const streamUrl = `${RPI_BASE_URL}/video_feed?ngrok-skip-browser-warning=true`;
+    // THE ONLY LINE THAT MATTERS
+    const streamUrl = `${RPI_BASE_URL}/video_feed?ngrok-skip-browser-warning=1&t=${Date.now()}`;
+
     video.src = streamUrl;
-    console.log('Stream URL set to:', streamUrl);
+    console.log('MJPEG →', streamUrl);
 
     video.onload = () => {
-        console.log('MJPEG stream loaded successfully');
         loading.classList.add('d-none');
         video.style.display = 'block';
         error.classList.add('d-none');
     };
     video.onerror = (e) => {
-        console.error('MJPEG stream error:', e, 'URL:', streamUrl);
         loading.classList.add('d-none');
-        errorMsg.textContent = `Failed to load MJPEG stream: Check browser compatibility or server response. URL: ${streamUrl}`;
+        errorMsg.textContent = `MJPEG failed – open DevTools → Network → check response`;
         error.classList.remove('d-none');
+        console.error('MJPEG error', e);
     };
 }
 
