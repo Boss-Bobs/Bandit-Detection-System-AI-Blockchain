@@ -125,7 +125,7 @@ function setupLiveFeed() {
 
     if (video.src) return;
 
-    const streamUrl = `${RPI_BASE_URL}/video_feed?ngrok-skip-browser-warning=true`;
+    const streamUrl = `${RPI_BASE_URL}/video_feed?ngrok-skip-browser-warning=1`;
     video.src = streamUrl;
     console.log('Stream URL set to:', streamUrl);
 
