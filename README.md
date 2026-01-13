@@ -85,7 +85,7 @@ Night Vision Optimization: Fine-tune the model with more infrared (IR) footage t
 
 ## 👨‍🎓 Author
 **Destiny Omojo Onoja**, **Jedidiah Ngbede**,  <br>
-Computer Engineering, <br>
 Final Year Project, <br>
+Computer Engineering, <br>
 Federal University of Technology, Minna (FUTMINNA), <br>
 2025.
