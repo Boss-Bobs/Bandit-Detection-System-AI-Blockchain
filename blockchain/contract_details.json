@@ -1,0 +1,114 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_folder",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_frameIdx",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_error",
+				"type": "string"
+			}
+		],
+		"name": "logAnomaly",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "anomalies",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "folder",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "frameIdx",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "error",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "getAnomaly",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAnomalyCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
