@@ -1,7 +1,6 @@
 # Development of Anomaly-Detection Based Surveillance System for Bandit Attack Detection
 A Final Year Project using Deep Learning and Computer Vision. <br>
 
-https://github.com/user-attachments/assets/574f949b-dbc4-4ef7-9b87-5ec2b0851796
 
 
 ## 🛡️ Project Goal<br>
