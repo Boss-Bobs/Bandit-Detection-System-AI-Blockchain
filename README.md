@@ -59,6 +59,14 @@ Explorer: View on Sepolia Etherscan <br>
 Key Functions: <br>
 logAnomaly(string _folder, uint256 _frameIdx, string _error): This function records the specific folder, frame number, and error message of a bandit attack permanently on the blockchain.
 
+### 🔗 Immutable Security Audit Trail
+Every detection event is hashed and sent to the Ethereum Sepolia Testnet. 
+
+**Contract Logic:**
+- `logAnomaly`: Records the frame index and type of bandit activity.
+- `block.timestamp`: Automatically records the exact time of the attack from the blockchain clock (cannot be faked by the user).
+- **Security:** Only the system can write logs, but anyone with the contract address can verify them.
+
 ## 📊 Model Performance <br>
 The system was evaluated based on its ability to distinguish between normal activity and simulated banditry scenarios. <br>
 Accuracy: 79% <br>
