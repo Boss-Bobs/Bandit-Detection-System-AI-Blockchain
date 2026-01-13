@@ -1,7 +1,7 @@
 # Development of Anomaly-Detection Based Surveillance System for Bandit Attack Detection
 A Final Year Project using Deep Learning and Computer Vision. <br>
 
-
+https://github.com/user-attachments/assets/64c1e79b-f75c-41d3-8d1c-0581b0318e1e
 
 ## 🛡️ Project Goal<br>
 The objective of this system is to automate the detection of suspicious activities associated with bandit attacks in surveillance footage. By using Deep Learning, the system identifies "anomalies" (atypical behaviors or objects) that deviate from normal environmental patterns, providing a real-time visualization dashboard for security monitoring.
