@@ -41,6 +41,9 @@ Purpose: When a "Bandit Attack" is detected, the system automatically generates 
 Immutable Logging: The timestamp, device ID, and detection confidence are stored on-chain, ensuring that security records cannot be altered or deleted by unauthorized parties. <br>
 Smart Contract: [Optional: Link to your Etherscan/Sepolia transaction or contract address here].
 
+## Web3 Integration
+The system utilizes the Web3.py library to interact with an Ethereum Smart Contract. Upon detection of an anomaly, a signed transaction is sent to the Sepolia Testnet, ensuring that security logs are immutable and verifiable by stakeholders.
+
 ## 🔌 Hardware Implementation
 To simulate a real-world surveillance environment, the system was deployed on edge hardware.
 
