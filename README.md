@@ -14,7 +14,6 @@ Because of the high computational requirements for analyzing surveillance video 
 Dataset Source: https://www.kaggle.com/datasets/bossbobs/futminna-dataset<br>
 Data Characteristics: The dataset consists of [e.g., 2,000+] frames categorized into "Normal" surveillance footage and "Anomaly" (Bandit activity) scenarios.<br>
 Preprocessing: I used data_gen.py to perform image normalization and augmentation (rotating, flipping, and brightness adjustment) to ensure the model can detect attacks in various lighting conditions.<br>
-Training Performance: The model achieved an accuracy of [e.g., 92%] and a [e.g., 0.89] F1-score, which is critical for minimizing "false negatives" in a security context.
 
 ## 🛠️ Technical Stack & Architecture<br>
 The system is divided into two main components: <br>
@@ -58,7 +57,7 @@ To simulate a real-world surveillance environment, the system was deployed on ed
 ## 🔗 Smart Contract Details <br>
 Contract Address: 0x279FcACc1eB244BBD7Be138D34F3f562Da179dd5 <br>
 Network: Ethereum Sepolia Testnet <br>
-Explorer: View on Sepolia Etherscan <br>
+Explorer: [View on Sepolia Etherscan] (https://sepolia.etherscan.io/address/0x279FcACc1eB244BBD7Be138D34F3f562Da179dd5) <br>
 Key Functions: <br>
 logAnomaly(string _folder, uint256 _frameIdx, string _error): This function records the specific folder, frame number, and error message of a bandit attack permanently on the blockchain.
 
@@ -81,3 +80,10 @@ To make this system "production-ready" for real-world deployment, I plan to: <br
 Edge Deployment: Optimize the model using TensorFlow Lite for deployment on Raspberry Pi or Jetson Nano (to be used directly on cameras). <br>
 SMS/Email Alerts: Integrate an API (like Twilio) to send instant notifications to security personnel when an attack is detected. <br>
 Night Vision Optimization: Fine-tune the model with more infrared (IR) footage to improve detection in total darkness. <br>
+
+## 👨‍🎓 Author
+**Destiny Omojo Onoja**, **Jedidiah Ngbede**,  <br>
+Computer Engineering, <br>
+Final Year Project, <br>
+Federal University of Technology, Minna (FUTMINNA), <br>
+2025.
